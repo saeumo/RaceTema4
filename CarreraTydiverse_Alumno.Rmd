@@ -189,6 +189,8 @@ cran2[order(cran2$package, cran2$ip_id),]
 ```
 13. Ordena `cran2` según los valores de `country` (ascendente), `r_version` (desdencente) e `ip_id`(ascendente).
 ```{r}
+cran2[order (cran2$country, cran2$r_version, cran2$ip_id), decreasing = c(FALSE, TRUE, FALSE)]
+
 ```
 14. Selecciona el subconjunto formado por las variables, del `cran`, `ip_id, package y size` 
 en este orden y almacénalas en `cran3`.
